@@ -1,0 +1,200 @@
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////      HOME HEADER      /////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.a {
+  height: 3.47vw;
+  background-color: var(--myColor);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.03vw solid #658cbf;
+}
+.aA {
+  width: 16vw;
+  height: 100%;
+  background-image: url(../../assets/ic_fuel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 1vw;
+}
+.aB {
+  width: 25vw;
+  height: 100%;
+  background-image: url(../../assets/ic_energy.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.aC {
+  display: flex;
+  align-items: center;
+}
+.aCa {
+  width: 2.2vw;
+  height: 2.2vw;
+  background-image: url(../../assets/ic_bell.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0.8vw;
+}
+.aCb {
+  margin: 0.5vw;
+}
+.aCbA {
+  font-size: 0.75vw;
+  font-weight: 200;
+}
+.aCbC {
+  font-size: 0.85vw;
+}
+.aCc {
+  width: 2.2vw;
+  height: 2.2vw;
+  background-image: url(../../assets/ic_bell.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0.4vw;
+  border-radius: 50%;
+}
+.aCd {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-image: url(../../assets/ic_logout1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1vw;
+  margin-right: 1.2vw;
+}
+.aCd:hover {
+  background-image: url(../../assets/ic_logout.svg);
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////       HOME BODY       /////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.b {
+  position: fixed;
+  top: 3.5vw;
+  bottom: 0;
+  left: 3.5vw;
+  right: 0;
+}
+
+.bA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5vw;
+  padding: 0 0.8vw;
+  border-bottom: 0.03vw solid #a0b6d2;
+}
+.bAa {
+  color: #021c3e;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+.bAb {
+  display: flex;
+  font-size: 0.8vw;
+  align-items: center;
+}
+.bAbA {
+  color: #707070;
+  margin: 0.2vw;
+}
+.bAbB {
+  margin: 0.2vw;
+  border: 0.04vw solid #e2e2e2;
+  border-radius: 0.2vw;
+  padding: 0.2vw 0.4vw;
+  font-size: 0.8vw;
+  color: #707070;
+}
+.bAbC {
+  margin: 0.2vw;
+  font-size: 0.7vw;
+  background-color: #0a4573;
+  border-radius: 0.2vw;
+  padding: 0.25vw 0.4vw;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////      HOME DROWER      /////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.c {
+  transition: 0.2s;
+  position: fixed;
+  top: 3.5vw;
+  bottom: 0;
+  left: 0;
+  width: 3.5vw;
+  background-color: var(--myColor);
+  padding-top: 3.5vw;
+  overflow: hidden;
+}
+.c:hover {
+  transition: 0.3s;
+  width: 13vw;
+}
+.cA {
+  height: calc(100vh - 12vw);
+  overflow: auto;
+}
+.cAa,
+.cAa_ {
+  width: calc(100% - 3.5vw);
+  margin: 1vw 0;
+  height: 2.8vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  /* padding: 1vw; */
+  padding-left: 3vw;
+  margin-right: 0.2vw;
+  border-end-end-radius: 0.5vw;
+  border-top-right-radius: 0.5vw;
+  background-image: url(../../assets/ic_dashbord.svg);
+  filter: opacity(0.5);
+  background-position: 1vw 0.8vw;
+  background-repeat: no-repeat;
+  background-size: 1.2vw;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1vw;
+}
+.cAa:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.cAa_ {
+  font-weight: 500;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  filter: opacity(1);
+}
+.cB {
+  height: 3.8vw;
+  width: 12vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: .7vw;
+  background-image: url(../../assets/ic_fuel2.svg);
+}

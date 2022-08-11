@@ -1,0 +1,66 @@
+/* COMMON CLASS */
+.ccA,
+.ccB {
+  font-size: 1vw;
+  font-weight: 500;
+  color: #021c3e;
+  padding: 0.4vw;
+  padding-top: 0.8vw;
+  display: flex;
+  align-items: flex-end;
+}
+.ccA_ {
+  font-size: 0.6vw;
+  padding: 0.1vw .2vw;
+  color: #021c3ea8;
+}
+.ccB {
+  width: 45%;
+}
+/*  */
+/* START BODY */
+/*  */
+.a {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  overflow: auto;
+  height: calc(100vh - 8.5vw);
+  width: 100%;
+  background-color: #eef1f5;
+  padding: 0.5vw 0;
+  padding-bottom: 1vw;
+}
+.aA {
+  width: 35%;
+}
+.aAa {
+  width: 100%;
+  height: 18vw;
+  background-color: white;
+  border-radius: 1vw;
+}
+.aAb {
+  display: flex;
+  justify-content: space-between;
+}
+.aAbA {
+  background-color: white;
+  border-radius: 1vw;
+  width: 48%;
+  height: 12vw;
+}
+.aAc {
+  height: 12vw;
+  background-color: white;
+  border-radius: 1vw;
+}
+.aAd {
+  height: 26.4vw;
+  background-color: white;
+  border-radius: 1vw;
+}
+.aC {
+  width: 25%;
+}
+/* END BODY */

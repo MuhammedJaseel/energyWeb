@@ -1,0 +1,311 @@
+.b {
+  padding: 1.2vw;
+}
+.bA {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9vw;
+}
+.bAa {
+  width: 26%;
+  background-image: url(../../../assets/ic_petrol.svg);
+  background-size: 2vw;
+  background-repeat: no-repeat;
+  padding-left: 3.3vw;
+  background-position: 0.5vw;
+}
+.bAaB {
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: var(--myColor);
+}
+.bAb {
+  width: 33%;
+  padding-left: 1vw;
+  border-left: 0.08vw solid #9fb5d2;
+  border-right: 0.08vw solid #9fb5d2;
+}
+.bAbB {
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: #56a052;
+}
+.bAc {
+  padding-left: 1vw;
+  width: 33%;
+}
+.bAcB {
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: #f0534a;
+}
+.bB {
+  background-color: #e5ecef;
+  height: 0.1vw;
+  margin: 0.5vw 1vw;
+  margin-bottom: 0.2vw;
+}
+.bC {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #343536;
+  font-size: 0.8vw;
+}
+.bCb {
+  font-size: 0.7vw;
+  padding-left: 0.8vw;
+  background-image: url(../../../assets/ic_time.svg);
+  background-size: 0.6vw;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.bD {
+}
+.bDa {
+}
+.bDb {
+}
+.bDc {
+}
+.c {
+  padding: 1.2vw 1.5vw;
+}
+.cC {
+  font-size: 0.6vw;
+  color: #021c3e;
+  margin-top: 1.4vw;
+  text-align: right;
+  padding-right: 0.2vw;
+}
+.cD {
+  height: 1.3vw;
+  width: 100%;
+  display: flex;
+  border-radius: 0.6vw;
+  background-color: #e2e3e3;
+  margin-top: 0.4vw;
+  margin-bottom: 2vw;
+}
+.cDd,
+.cDe,
+.cDf,
+.cDg {
+  border-radius: 0.6vw;
+  height: 1.3vw;
+  background-color: #f0534a;
+  color: white;
+  font-weight: 500;
+  font-size: 0.6vw;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+  width: 50%;
+}
+.cDe {
+  background-color: #f0a04a;
+  width: 54%;
+}
+.cDf {
+  background-color: #a09452;
+  width: 64%;
+}
+.cDg {
+  background-color: #56a052;
+  width: 24%;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.d {
+  height: 80%;
+  padding: 0.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.dB {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dBa {
+  display: flex;
+  align-items: center;
+  color: #474747;
+  font-size: 0.55vw;
+  font-weight: 500;
+  margin-top: 0.5vw;
+}
+.dBaA {
+  width: 1.2vw;
+  height: 0.7vw;
+  border-radius: 0.2vw;
+  background-color: #86b6f3;
+  margin-left: 0.3vw;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.f {
+  padding: 1.2vw 1.5vw;
+}
+.fA {
+  display: flex;
+  justify-content: flex-end;
+}
+.fB {
+  height: 8.5vw;
+  overflow: auto;
+  display: flex;
+  margin-top: 0.8vw;
+}
+.fBa {
+  width: 50%;
+  padding-right: 0.8vw;
+  border-right: 0.05vw solid var(--myColor);
+}
+.fBaA {
+  border-radius: 0.4vw;
+  background-color: #ebe7f6;
+  padding: 0.4vw 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1vw;
+  color: var(--myColor);
+  margin-bottom: 0.4vw;
+  background-size: 2.5vw;
+  background-position: 1vw 0.65vw;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/ic_drop1.svg);
+}
+.fBaA:nth-child(even) {
+  background-color: #d4efff;
+  background-image: url(../../../assets/ic_drop2.svg);
+}
+.fBaAa {
+  color: #131313;
+  font-size: 1.5vw;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+}
+.fBaAaA {
+  font-size: 0.6vw;
+  padding: 0.15vw;
+}
+.fBb {
+  width: 50%;
+  padding-left: 0.8vw;
+}
+.fBbA {
+  border-radius: 0.3vw;
+  background-color: #ebe7f6;
+  padding: 0.4vw 0.8vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3vw;
+  font-weight: 500;
+}
+.fBbA:nth-child(even) {
+  background-color: #d4efff;
+}
+.fBbAa {
+  font-size: 0.7vw;
+}
+.fBbAb {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.fBbAbA {
+  font-size: 0.7vw;
+  color: rgba(0, 0, 0, 0.462);
+}
+.fBbAbB {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1vw;
+}
+.fBbAbBa {
+  color: #759ed3d7;
+  font-size: 0.6vw;
+  padding: 0.1vw;
+}
+.fBbAb {
+}
+.fBbAbA {
+}
+.fBbAbB {
+}
+.fBbAbBa {
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.h {
+  padding: 1.2vw 1.5vw;
+}
+.hC {
+  font-size: 0.8vw;
+  margin-top: 1vw;
+  margin-bottom: 0.3vw;
+  margin-left: 0.6vw;
+  color: var(--myColor);
+}
+.hD {
+  display: flex;
+  align-items: center;
+}
+.hDa,
+.hDa_1,
+.hDa_2,
+.hDa_3,
+.hDa_4 {
+  height: 2vw;
+  border-radius: 1vw;
+  background-image: url(../../../assets/ic_drop.svg);
+  background-size: 0.7vw;
+  background-position: 94%;
+  background-repeat: no-repeat;
+  margin-right: 0.4vw;
+  background-color: #8674fe;
+  width: 80%;
+}
+.hDa_1 {
+  background-color: #ff9066;
+  width: 60%;
+}
+.hDa_2 {
+  background-color: #ffca41;
+  width: 40%;
+}
+.hDa_3 {
+  background-color: #42cc7d;
+  width: 35%;
+}
+.hDa_4 {
+  background-color: #67c2e8;
+  width: 30%;
+}
+.hDb {
+  font-size: 0.9vw;
+  color: #374958;
+  font-weight: 500;
+  text-align: right;
+}
+.hDbA {
+  font-size: 0.5vw;
+  color: #37495873;
+  font-weight: 500;
+  text-align: right;
+}

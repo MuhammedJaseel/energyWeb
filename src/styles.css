@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: FiraSansCondensed;
+    src: url(./assets/font/FiraSansCondensed-ExtraLight.ttf);
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: FiraSansCondensed;
+    src: url(./assets/font/FiraSansCondensed-Regular.ttf);
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: FiraSansCondensed;
+    src: url(./assets/font/FiraSansCondensed-Medium.ttf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: FiraSansCondensed;
+    src: url(./assets/font/FiraSansCondensed-SemiBold.ttf);
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: FiraSansCondensed;
+    src: url(./assets/font/FiraSansCondensed-Bold.ttf);
+    font-weight: bold;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: FiraSansCondensed;
+  }
+  
+  :root {
+    --myColor: #406ca5;
+  }
+  
