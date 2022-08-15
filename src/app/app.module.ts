@@ -8,6 +8,9 @@ import { HomeDashboardComponent } from './home-dashboard/home-dashboard.componen
 import { HomeOpsComponent } from './home-ops/home-ops.component';
 import { GraphComponent } from './home-dashboard/graph/graph.component';
 
+import { GoogleMapsModule } from '@angular/google-maps';
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,7 @@ import { GraphComponent } from './home-dashboard/graph/graph.component';
     HomeOpsComponent,
     GraphComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule, NgChartsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

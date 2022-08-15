@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GraphComponent } from '../home-dashboard/graph/graph.component';
 
 @Component({
   selector: 'app-home',
@@ -10,17 +11,28 @@ export class HomeComponent implements OnInit {
 
   drowerPath = 'dashboard';
 
+  zoom = 12;
+  // center= google.maps.LatLngLiteral
+  options = {
+    // mapTypeId: 'hybrid',
+    // zoomControl: false,
+    // scrollwheel: false,
+    // disableDoubleClickZoom: true,
+    // maxZoom: 15,
+    // minZoom: 8,
+  };
+
   ngOnInit(): void {
     const path = window.location.pathname.split('/')[2];
     if (path !== undefined) this.drowerPath = path;
   }
 
   drowerIcon = [
-    { title: 'Dashboard', icon: '../', path: 'dashboard' },
-    { title: 'OPS Monitor', icon: '../', path: 'ops' },
-    { title: 'Report Center', icon: '../', path: 'report' },
-    { title: 'Add Site', icon: '../', path: 'addSite' },
-    { title: 'RSP Update', icon: '../', path: 'rsp' },
+    { title: 'Dashboard', icon: 'dashbord', path: 'dashboard' },
+    { title: 'OPS Monitor', icon: 'ops', path: 'ops' },
+    { title: 'Report Center', icon: 'report', path: 'report' },
+    { title: 'Add Site', icon: 'addsite', path: 'addSite' },
+    { title: 'RSP Update', icon: 'rsp', path: 'rsp' },
   ];
   onDrowerIconClick = (k: number) => {
     this.drowerPath = this.drowerIcon[k].path;

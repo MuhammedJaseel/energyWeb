@@ -1,5 +1,7 @@
 <!-- FOR MAP -->
-<div class="a" *ngIf="name === 'map'">this is MAp temp</div>
+<div class="a" *ngIf="name === 'map'">
+  <div #dashboardMap class="aA"></div>
+</div>
 <!-------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------->
@@ -14,26 +16,110 @@
       Total DU
       <div class="bAaB">748</div>
     </div>
-    <div class="bAb">
-      Online
-      <div class="bAbB">748</div>
-    </div>
-    <div class="bAc">
-      Offline
-      <div class="bAcB">748</div>
+    <div
+      class="bAb"
+      *ngFor="
+        let dt of [
+          { tit: 'Online', color: '#56A052', value: '748' },
+          { tit: 'Offline', color: '#F55A5A', value: '269' }
+        ]
+      "
+    >
+      <div
+        class="bAbA"
+        *ngFor="let dt1 of perNumbers"
+        [ngStyle]="{ transform: 'rotate(' + dt1.i + 'deg)' }"
+      >
+        <div
+          class="bAbAa"
+          [ngStyle]="{ background: dt1.v ? dt.color : '#E1E7EE' }"
+        ></div>
+      </div>
+      <div class="bAbB">
+        {{ dt.tit }}
+        <div class="bAbBa" [ngStyle]="{ color: dt.color }">{{ dt.value }}</div>
+      </div>
     </div>
   </div>
   <div class="bB"></div>
   <div class="bC">
-    <div>143/154</div>
-    <div class="bCb">23 06 2022 06:00</div>
-    <div>143/154</div>
-    <div class="bCb">23 06 2022 06:00</div>
-  </div>
-  <div class="bD">
-    <div class="bDa"></div>
-    <div class="bDb"></div>
-    <div class="bDc"></div>
+    <div class="bCa">
+      <div class="bCaA">
+        <div class="ccB">143/154</div>
+        <div class="ccA">23 06 2022 06:00</div>
+      </div>
+      <div class="bCaB">
+        <div class="bCaBa">
+          <div class="bCaBaA">6000</div>
+          <div class="bCaBaA">4000</div>
+          <div class="bCaBaA">2000</div>
+          <div class="bCaBaA">0</div>
+        </div>
+        <div class="bCaBb">
+          <div class="bCaBbA"></div>
+          <div class="bCaBbA"></div>
+          <div class="bCaBbA"></div>
+          <div class="bCaBbA"></div>
+          <div class="bCaBbB">
+            <div class="bCaBbBa">
+              <div class="bCaBbBaA"></div>
+              <div class="bCaBbBaB">Diesel</div>
+            </div>
+            <div class="bCaBbBa">
+              <div class="bCaBbBaA1"></div>
+              <div class="bCaBbBaB">Mogas 91</div>
+            </div>
+            <div class="bCaBbBa">
+              <div class="bCaBbBaA2"></div>
+              <div class="bCaBbBaB">Mogas 95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bCaC">
+        <div>Total Sales</div>
+        162.52
+      </div>
+    </div>
+    <div class="bCb"></div>
+    <div class="bCa">
+      <div class="bCaA_">
+        <div class="ccB">143/154</div>
+        <div class="ccA">23 06 2022 06:00</div>
+      </div>
+      <div class="bCaB">
+        <div class="bCaBa">
+          <div class="bCaBaA">6000</div>
+          <div class="bCaBaA">4000</div>
+          <div class="bCaBaA">2000</div>
+          <div class="bCaBaA">0</div>
+        </div>
+        <div class="bCaBb">
+          <div class="bCaBbA"></div>
+          <div class="bCaBbA"></div>
+          <div class="bCaBbA"></div>
+          <div class="bCaBbA"></div>
+          <div class="bCaBbB">
+            <div class="bCaBbBa">
+              <div class="bCaBbBaA"></div>
+              <div class="bCaBbBaB">Diesel</div>
+            </div>
+            <div class="bCaBbBa">
+              <div class="bCaBbBaA1"></div>
+              <div class="bCaBbBaB">Mogas 91</div>
+            </div>
+            <div class="bCaBbBa">
+              <div class="bCaBbBaA2"></div>
+              <div class="bCaBbBaB">Mogas 95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bCaC">
+        <div>Total Sales</div>
+        162.52
+      </div>
+    </div>
   </div>
 </div>
 <!-------------------------------------------------------------------------------------------------->
@@ -46,7 +132,7 @@
 <!-- FOR BAR GRAPH -->
 <div class="c" *ngIf="name === 'inventoryForecast'">
   <div class="bC">
-    <div class="bCb">23 06 2022 06:00</div>
+    <div class="ccA">23 06 2022 06:00</div>
     <div>Today</div>
   </div>
   <div class="cC">Tanks</div>
@@ -63,15 +149,25 @@
 <!-------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------->
 <div class="d" *ngIf="name === 'productSale'">
-  <div class="bCb">23 06 2022 06:00</div>
+  <div class="ccA">{{ prodectSale[graphValue].time }}</div>
   <div class="dB">
-    <div class="dBa">
-      RO Configured
-      <div class="dBaA"></div>
+    <div class="dBa" *ngFor="let dt of prodectSale[graphValue].data">
+      {{ dt.title }}
+      <div [ngStyle]="{ background: dt.color }" class="dBaA"></div>
     </div>
-    <div class="dBa">
-        HOS Received
-      <div class="dBaA"></div>
+  </div>
+  <div class="dC">
+    <div
+      class="dCa"
+      *ngFor="let i of prodectSale[graphValue].angle"
+      [ngStyle]="{
+        transform: 'rotate(' + i.value + 'deg)',
+        'background-color': i.color
+      }"
+    ></div>
+    <div class="top">
+      60%
+      <div class="topA">Diesel</div>
     </div>
   </div>
 </div>
@@ -85,7 +181,7 @@
 <!-------------------------------------------------------------------------------------------------->
 <div class="f" *ngIf="name === 'fillStatus'">
   <div class="fA">
-    <div class="bCb">23 06 2022 06:00</div>
+    <div class="ccA">23 06 2022 06:00</div>
   </div>
   <div class="fB">
     <div class="fBa">
@@ -118,7 +214,64 @@
     </div>
   </div>
 </div>
-<!-- <div *ngIf="name === 'inventoryForecast'">this is MAp temp</div> -->
+<!-------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------->
+<div class="g" *ngIf="name === 'salesInventoryTrends'">
+  <div class="gA">
+    <div class="gAa">
+      <div class="gAaB">Sales</div>
+      <div class="gAaA">Inventory</div>
+    </div>
+    <div class="gAa">
+      <div class="gAaA">Today</div>
+      <div class="gAaA">Yesterday</div>
+      <div class="gAaA">Past 7 Days</div>
+      <div class="gAaC">Month</div>
+    </div>
+  </div>
+  <div class="gAb">
+    <div class="gAbA">Volume (KL)</div>
+    <div class="gAbB">
+      <div>500</div>
+      <div>300</div>
+      <div>200</div>
+      <div>100</div>
+      <div>0</div>
+    </div>
+    <div class="gAbC">
+      <div class="gAbCa"></div>
+      <div class="gAbCa"></div>
+      <div class="gAbCa"></div>
+      <div class="gAbCa"></div>
+      <div class="gAbCa"></div>
+    </div>
+    <div class="gAbD">
+      <div *ngFor="let eachGraph of saleInventoryGraph.graphs">
+        <!-- <div
+          class="gAbDa"
+          *ngFor="let d of eachGraph.data; let i = index"
+          [ngStyle]="{
+            bottom: d.bottom + '%',
+            left: d.left + '%',
+            transform: 'rotate(' + d.angle + 'rad)',
+            'background-color': eachGraph.color
+          }"
+        ></div> -->
+      </div>
+    </div>
+  </div>
+  <div class="gAc">
+    <div class="gAcA" *ngFor="let d of saleInventoryGraph.hrValues">
+      {{ d }}
+    </div>
+  </div>
+  <div class="gAd">Days</div>
+</div>
 <!-------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------------------------------->
@@ -128,7 +281,7 @@
 <!-------------------------------------------------------------------------------------------------->
 <div class="h" *ngIf="name === 'top5Sites'">
   <div class="bC">
-    <div class="bCb">23 06 2022 06:00</div>
+    <div class="ccA">23 06 2022 06:00</div>
     <div>Today</div>
   </div>
   <br />

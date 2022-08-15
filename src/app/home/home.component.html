@@ -61,6 +61,7 @@
       class="cAa"
       [ngClass]="{ cAa_: drowerPath === ic.path }"
       (click)="onDrowerIconClick(i)"
+      [ngStyle]="{ 'background-image': 'url(../../assets/ic_'+ic.icon+'.svg)' }"
     >
       {{ ic.title }}
     </div>
